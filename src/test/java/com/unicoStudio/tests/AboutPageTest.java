@@ -8,6 +8,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Iterator;
+import java.util.Set;
+
 public class AboutPageTest extends TestBase{
 
     AboutPage aboutPage=new AboutPage();
@@ -36,38 +39,75 @@ public class AboutPageTest extends TestBase{
         String theTeamInfText = aboutPage.theTeamInf.getText();
         System.out.println("theTeamInfText = " + theTeamInfText);
 
+        String homeWindow = driver.getWindowHandle();
+        System.out.println("homeWindow = " + homeWindow);
+        Set<String> windowHandles;
+        Iterator t;
+
         /* Facebook test*/
+        jse= (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].click();",homePage.facebookBtn);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        String mainPage  = (String) t.next();
+        String newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
         BrowserUtils.waitForPageToLoad(1);
         BrowserUtils.waitFor(1);
         String actFacebook=driver.getTitle();
         System.out.println("actFacebook = " + actFacebook);
-        Assert.assertEquals(actFacebook, ConfigurationReader.get("expFacebook"));
-        driver.navigate().back();
-        BrowserUtils.waitFor(1);
+        Assert.assertEquals(actFacebook,ConfigurationReader.get("expFacebook"));
+        driver.close();
+        driver.switchTo().window(mainPage);
 
         /* Twitter test*/
         jse.executeScript("arguments[0].click();",homePage.twitterBtn);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        mainPage  = (String) t.next();
+        newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
         BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(1);
+        BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(1);
         String actTwitter=driver.getTitle();
         System.out.println("actTwitter = " + actTwitter);
-        driver.navigate().back();
         BrowserUtils.waitFor(1);
+        //  Assert.assertEquals(actTwitter,ConfigurationReader.get("expTwitter"));
+        driver.close();
+        driver.switchTo().window(mainPage);
 
         /* Instagram test*/
         jse.executeScript("arguments[0].click();",homePage.instagramBtn);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        mainPage  = (String) t.next();
+        newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
         BrowserUtils.waitForPageToLoad(1);
         String actInstagram=driver.getTitle();
         System.out.println("actInstagram = " + actInstagram);
-        driver.navigate().back();
-        BrowserUtils.waitFor(1);
+        Assert.assertTrue(actInstagram.contains("Instagram"));
+        //   Assert.assertEquals(actInstagram,ConfigurationReader.get("expInstagram"));
+        driver.close();
+        driver.switchTo().window(mainPage);
+
 
         /* LinkedIn test*/
         jse.executeScript("arguments[0].click();",homePage.linkedinBtn);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        mainPage  = (String) t.next();
+        newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
         BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(2);
         String actLinkedIn=driver.getTitle();
-        System.out.println("actLinkedIn = " + actLinkedIn);
-        driver.navigate().back();
+        // Assert.assertEquals(actLinkedIn,ConfigurationReader.get("expLinkedIn"));
+        driver.close();
+        driver.switchTo().window(mainPage);
+
 
 
 

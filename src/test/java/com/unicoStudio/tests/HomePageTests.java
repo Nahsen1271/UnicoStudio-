@@ -4,10 +4,14 @@ package com.unicoStudio.tests;
 import com.unicoStudio.pages.HomePage;
 import com.unicoStudio.utilities.BrowserUtils;
 import com.unicoStudio.utilities.ConfigurationReader;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Iterator;
 import java.util.Set;
 
 
@@ -43,46 +47,80 @@ public class HomePageTests extends TestBase{
 
         String homeWindow = driver.getWindowHandle();
         System.out.println("homeWindow = " + homeWindow);
+        Set<String> windowHandles;
+        Iterator t;
 
         /* Facebook test*/
         JavascriptExecutor jse= (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].click();",homePage.facebookBtn);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        String mainPage  = (String) t.next();
+        String newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
         BrowserUtils.waitForPageToLoad(1);
         BrowserUtils.waitFor(1);
         String actFacebook=driver.getTitle();
         System.out.println("actFacebook = " + actFacebook);
         Assert.assertEquals(actFacebook,ConfigurationReader.get("expFacebook"));
-        driver.navigate().back();
-         BrowserUtils.waitFor(1);
+        driver.close();
+        driver.switchTo().window(mainPage);
 
-        /* Twitter test*/
+          /* Twitter test*/
         jse.executeScript("arguments[0].click();",homePage.twitterBtn);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        mainPage  = (String) t.next();
+        newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
         BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(1);
+        BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(1);
         String actTwitter=driver.getTitle();
         System.out.println("actTwitter = " + actTwitter);
-        driver.navigate().back();
         BrowserUtils.waitFor(1);
+      //  Assert.assertEquals(actTwitter,ConfigurationReader.get("expTwitter"));
+        driver.close();
+        driver.switchTo().window(mainPage);
 
         /* Instagram test*/
         jse.executeScript("arguments[0].click();",homePage.instagramBtn);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        mainPage  = (String) t.next();
+        newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
         BrowserUtils.waitForPageToLoad(1);
         String actInstagram=driver.getTitle();
         System.out.println("actInstagram = " + actInstagram);
-        driver.navigate().back();
-        BrowserUtils.waitFor(1);
+        Assert.assertTrue(actInstagram.contains("Instagram"));
+     //   Assert.assertEquals(actInstagram,ConfigurationReader.get("expInstagram"));
+        driver.close();
+        driver.switchTo().window(mainPage);
+
 
         /* LinkedIn test*/
         jse.executeScript("arguments[0].click();",homePage.linkedinBtn);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        mainPage  = (String) t.next();
+        newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
         BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(2);
         String actLinkedIn=driver.getTitle();
-        System.out.println("actLinkedIn = " + actLinkedIn);
-        driver.navigate().back();
+       // Assert.assertEquals(actLinkedIn,ConfigurationReader.get("expLinkedIn"));
+        driver.close();
+        driver.switchTo().window(mainPage);
+
 
         /* Term of Conditions test*/
 
         jse.executeScript("arguments[0].click();",homePage.termAndCon);
         String termAndConTextText = homePage.termAndConText.getText();
         System.out.println("termAndConTextText = " + termAndConTextText);
+        Assert.assertEquals(termAndConTextText,"Terms and Conditions");
         driver.navigate().back();
 
         /* PP test*/
@@ -90,102 +128,39 @@ public class HomePageTests extends TestBase{
         jse.executeScript("arguments[0].click();",homePage.privacyPolicy);
         String privacyPolicyTextText = homePage.privacyPolicyText.getText();
         System.out.println("privacyPolicyTextText = " + privacyPolicyTextText);
+        Assert.assertEquals(privacyPolicyTextText,"Privacy Policy");
         driver.navigate().back();
-
-        driver.switchTo().window(homeWindow); // Return to the home page
 
         // Google Play sayfasına geçişin kontrol edilmesi
 
         jse.executeScript("arguments[0].click();",homePage.googlePlayBtn);
-        Set<String> windowHandles = driver.getWindowHandles();
-        for (String handle : windowHandles) {
-
-            if(!handle.equals(homeWindow)){
-                driver.switchTo().window(handle);
-                    }
-
-        }
-        String googleWindow=driver.getWindowHandle();
-        System.out.println("googleWindow = " + googleWindow);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        mainPage  = (String) t.next();
+        String googlePlayWindow= (String) t.next();
+        driver.switchTo().window(googlePlayWindow);
+        BrowserUtils.waitFor(1);
         String actGooglePlayTitle=driver.getTitle();
-        System.out.println("actGooglePlayTitle " + driver.getTitle());
+        System.out.println("actGooglePlayTitle : " + driver.getTitle());
         Assert.assertEquals(actGooglePlayTitle,ConfigurationReader.get("expGooglePlayTitle"));
-        driver.switchTo().window(homeWindow);
+        driver.close();
+        driver.switchTo().window(mainPage);
 
         // AppStore sayfasına geçişin kontrol edilmesi
-     //   homePage.appStoreBtn.click();
+
         jse.executeScript("arguments[0].click();",homePage.appStoreBtn);
-        System.out.println("driver.getTitle()Son = " + driver.getTitle());
-
         windowHandles = driver.getWindowHandles();
-        String appWindow;
-        for (String handle : windowHandles) {
-
-            if (!handle.equals(googleWindow))
-                if (!handle.equals(homeWindow)) {
-                    driver.switchTo().window(handle);
-
-                }
-
-        }
-        appWindow = driver.getWindowHandle();
-        System.out.println("appWindow = " + appWindow);
+        t = windowHandles.iterator();
+        mainPage  = (String) t.next();
+        googlePlayWindow= (String) t.next();
+        driver.switchTo().window(googlePlayWindow);
+        BrowserUtils.waitFor(1);
         String actAppStoreTitle=driver.getTitle();
         System.out.println("actAppStoreTitle= " + actAppStoreTitle);
-        driver.switchTo().window(homeWindow);
-        System.out.println("driver.getTitle(2) = " + driver.getTitle());
+        Assert.assertEquals(actAppStoreTitle,ConfigurationReader.get("expAppStoreTitle"));
+        driver.close();
+        driver.switchTo().window(mainPage);
 
-
-
-
-
-
-
-
-//        WebElement username= driver.findElement(By.cssSelector("#identifierId"));
-//        //  username.click();
-//        username.sendKeys("nahsen@unicostudio.co");
-//        WebElement forwordBut= driver.findElement(By.xpath("(//span[@class='VfPpkd-vQzf8d'])[1]"));
-//        forwordBut.click();
-//        WebElement checkBtn= driver.findElement(By.xpath("(//input)[5]"));
-//     //   Thread.sleep(2000);
-//        JavascriptExecutor jse= (JavascriptExecutor) driver;
-//     //   jse.executeScript("arguments[0].click();",checkBtn);
-//
-//        Thread.sleep(2000);
-//        WebElement password= driver.findElement(By.xpath("(//input)[4]"));
-//        Thread.sleep(2000);
-//        password.sendKeys("HerseySenden");
-//        Thread.sleep(1000);
-//        WebElement forwordBut2= driver.findElement(By.xpath("(//span[@class='VfPpkd-vQzf8d'])[1]"));
-//        forwordBut2.click();
-//        Thread.sleep(2000);
-//        WebElement developerChoose= driver.findElement(By.xpath("(//developer-item)[1]"));
-//        developerChoose.click();
-//        Thread.sleep(1000);
-//        WebElement WhoIs= driver.findElement(By.xpath("//div[(text()='Who is? Brain Teaser & Riddles')]"));
-//        WhoIs.click();
-//        Thread.sleep(2000);
-//        JavascriptExecutor jse1= (JavascriptExecutor) driver;
-//        for (int i = 0; i < 10; i++) {
-//            Thread.sleep(1000);
-//            jse1.executeScript("window.scrollBy(0,250)");
-//
-//        }
-//
-////        WebElement ratingAndReviewsBtn= driver.findElement(By.xpath("//body/div/root[@id='console-root-021280']/console-chrome[@class='_ngcontent-nfa-0 _nghost-nfa-1']/div[@class='console-content _ngcontent-nfa-1']/material-drawer[@class='desktop-navigation-drawer _ngcontent-nfa-1 mat-drawer-expanded']/navigation-bar[@class='_ngcontent-nfa-1 _nghost-nfa-16']/div[@class='group-container _ngcontent-nfa-16']/expandable-container[@class='_ngcontent-nfa-16 _nghost-nfa-25 group-children']/div[@id='a31466219-FD58-4428-AFCC-75A74890EF88--40']/div[@class='content _ngcontent-nfa-25']/navigation-subtree[1]/navigation-element[1]/div[1]/material-ripple[1]"));
-////        JavascriptExecutor jse2= (JavascriptExecutor) driver;
-////        jse2.executeScript("arguments[0].scrollIntoView(true);",ratingAndReviewsBtn);
-// //       ratingAndReviewsBtn.click();
-//
-//        Thread.sleep(1000);
-//        WebElement ratingAndReviewsBtn= driver.findElement(By.xpath("//i[normalize-space()='comment']"));
-//    //    JavascriptExecutor jse2= (JavascriptExecutor) driver;
-//        jse.executeScript("arguments[0].scrollIntoView(true);",ratingAndReviewsBtn);
-//        ratingAndReviewsBtn.click();
-//
-//        WebElement reviews= driver.findElement(By.cssSelector("div[class='row _ngcontent-nfa-26 child-element selected'] material-ripple[class='_ngcontent-nfa-26']"));
-//        reviews.click();
     }
 
 }

@@ -3,6 +3,7 @@ package com.unicoStudio.tests;
 import com.unicoStudio.pages.AboutPage;
 import com.unicoStudio.pages.GamesPages;
 import com.unicoStudio.pages.HomePage;
+import com.unicoStudio.utilities.BrowserUtils;
 import com.unicoStudio.utilities.ConfigurationReader;
 import com.unicoStudio.utilities.Driver;
 import org.openqa.selenium.By;
@@ -11,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Iterator;
 import java.util.Set;
 
 public class GamesPageTest  extends TestBase{
@@ -18,15 +20,21 @@ public class GamesPageTest  extends TestBase{
     HomePage homePage=new HomePage();
     AboutPage aboutPage=new AboutPage();
     GamesPages gamesPages=new GamesPages();
+    JavascriptExecutor jse;
 
+    String homeWindow;
+    Set<String> windowHandles;
+    Iterator t;
     @Test(priority = 1)
     public void gamesPageTest() {
-        JavascriptExecutor jse= (JavascriptExecutor) driver;
+        jse= (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].click();",homePage.gamesBtn);
         String actUnicoStudioText = gamesPages.unicoStudio.getText();
+        System.out.println("actUnicoStudioText = " + actUnicoStudioText);
         Assert.assertEquals(actUnicoStudioText,ConfigurationReader.get("expUnicoStudioText"));
         
         String actGamesPageTitle = driver.getTitle();
+        System.out.println("actGamesPageTitle = " + actGamesPageTitle);
         Assert.assertEquals(actGamesPageTitle,ConfigurationReader.get("expGamesPageTitle"));
 
 
@@ -34,95 +42,70 @@ public class GamesPageTest  extends TestBase{
     }
     @Test(priority = 2) /* Brain Test Google Play Check*/
     public void brainTestGP() {
-        JavascriptExecutor jse= (JavascriptExecutor) driver;
+        jse= (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].click();",homePage.gamesBtn);
         String brainTestText = gamesPages.brainTest.getText(); // Verify that it is Brain Test Game
         System.out.println("brainTestText = " + brainTestText);
 
         Assert.assertEquals(driver.getTitle(),ConfigurationReader.get("expGamesPageTitle"));
 
-        String homeWindow=driver.getWindowHandle();
+        homeWindow=driver.getWindowHandle();
         System.out.println("homeWindow = " + homeWindow);
 
         // Google Play sayfasına geçişin kontrol edilmesi
 
         jse.executeScript("arguments[0].click();",gamesPages.brainTestGP);
-        Set<String> windowHandles = driver.getWindowHandles();
-        for (String handle : windowHandles) {
-
-            if(!handle.equals(homeWindow)){
-                driver.switchTo().window(handle);
-            }
-
-        }
-        String googleGamesWindow=driver.getWindowHandle();
-        System.out.println("googleWindow = " + googleGamesWindow);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        String mainPage  = (String) t.next();
+        String newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
+        BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(1);
         String actGPGamesTitle=driver.getTitle();
         Assert.assertEquals(actGPGamesTitle, ConfigurationReader.get("expGPGamesTitle"));// Assert burada yapılacak.
-        driver.switchTo().window(homeWindow);
+        driver.close();
+        driver.switchTo().window(mainPage);
 
 
 
     }
     @Test(priority = 3) /* Brain Test AppStore Check*/
     public void brainTestAppStore() {
-        JavascriptExecutor jse= (JavascriptExecutor) driver;
+        jse= (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].click();",homePage.gamesBtn);
-
-        String homeWindow=driver.getWindowHandle();
-       // System.out.println("homeWindow = " + homeWindow);
-
-        // AppStore sayfasına geçişin kontrol edilmesi
-
         jse.executeScript("arguments[0].click();",gamesPages.brainTestAppSore);
-        Set<String> windowHandles = driver.getWindowHandles();
-        for (String handle : windowHandles) {
-
-            if(!handle.equals(homeWindow)){
-                driver.switchTo().window(handle);
-            }
-
-        }
-        String appStoreGamesWindow=driver.getWindowHandle();
-        System.out.println("googleWindow = " + appStoreGamesWindow);
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        String mainPage  = (String) t.next();
+        String newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
+        BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(1);
         Assert.assertEquals(gamesPages.brainTestAppText.getText(), ConfigurationReader.get("expBTAppStore"));// Assert burada yapılacak.
-        driver.switchTo().window(homeWindow);
+        driver.close();
+        driver.switchTo().window(mainPage);
 
 
 
     }
-    @Test(priority = 4)  /* Brain Test AppStore Check*/
+    @Test(priority = 4)  /* Brain Test Poki Check*/
     public void brainTestPoki() {
-        JavascriptExecutor jse= (JavascriptExecutor) driver;
+        jse= (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].click();",homePage.gamesBtn);
-
-        String homeWindow=driver.getWindowHandle();
-       // System.out.println("homeWindow = " + homeWindow);
-
-        // AppStore sayfasına geçişin kontrol edilmesi
-
         jse.executeScript("arguments[0].click();",gamesPages.brainTestPoki);
-        Set<String> windowHandles = driver.getWindowHandles();
-        for (String handle : windowHandles) {
-
-            if(!handle.equals(homeWindow)){
-                driver.switchTo().window(handle);
-            }
-
-        }
-        String brainTestPokiWindow=driver.getWindowHandle();
-        System.out.println("brainTestPokiWindow = " + brainTestPokiWindow);
-//        String actBTPokiTitle=driver.getCurrentUrl();
-//        System.out.println("actBTPokiTitle " + actBTPokiTitle);
-//        //   Assert.assertEquals(actGooglePlayTitle, ConfigurationReader.get("expGooglePlayTitle"));// Assert burada yapılacak.
-//        driver.switchTo().window(homeWindow);
-//        driver.quit();
-        //brainTestPokiWindow = CDwindow-0A322D78CA06A56FB52E5EB402B9EAB6
-        //brainTestPokiWindow = CDwindow-B347FF76FFDE3CF6505237D5175FACD9
-        //brainTestPokiWindow = CDwindow-D14B7B0B7FB72841EA30AE8E110767E5
-        String text = driver.findElement(By.xpath("//h1[@class='DetailedTile__DetailedTileTitleText-sc-1ercfrx-4 guwtdr']")).getText();
-        System.out.println("text = " + text);
-    //    Driver.closeDriver();
+        windowHandles = driver.getWindowHandles();
+        t = windowHandles.iterator();
+        String mainPage  = (String) t.next();
+        String newWindow= (String) t.next();
+        driver.switchTo().window(newWindow);
+        BrowserUtils.waitForPageToLoad(1);
+        BrowserUtils.waitFor(1);
+        String poki= driver.getTitle();
+        System.out.println("poki = " + poki);
+        Assert.assertTrue(poki.contains("Poki"));// Assert burada yapılacak.
+        driver.close();
+        driver.switchTo().window(mainPage);
 
     }
     /*Bundan sonra aynı patern diğer oyunlarında kontrolü yapılabilir..*/

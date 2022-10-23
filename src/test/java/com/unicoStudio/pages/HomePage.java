@@ -26,8 +26,9 @@ public class HomePage {
     @FindBy(xpath="//a[@class='btn-alt-shadow-rounded-large hover-gray px-4 p-2']")
     public WebElement learnAboutUs;
 
-
-    @FindBy(xpath = "//a[normalize-space()='Careers']")
+    @FindBy(xpath = "//*[@id='navbar']/ul/li[1]/a") //
+    public WebElement ageOfBrainosBtn;
+    @FindBy(xpath = "//a[normalize-space()='Careers']") // //*[@id="navbar"]/ul/li[1]/a
     public WebElement careersBtn;
 
     @FindBy(xpath = "//a[normalize-space()='Games']")
