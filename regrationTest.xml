@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="UnicoStudio Automation" verbose="1">
     <test name="UnicoStudioRegrationTest">
-        <packages>
-            <package name="com.unicoStudio.tests.HomePageTests"></package>
-            <package name="com.unicoStudio.tests.AboutPageTest"></package>
-        </packages>
+        <classes>
+            <class name="com.unicoStudio.tests.HomePageTests"></class>
+            <class name="com.unicoStudio.tests.AboutPageTest"></class>
+        </classes>
     </test>
 </suite>
