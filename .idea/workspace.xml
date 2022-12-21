@@ -5,54 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e958b764-042b-44a6-89f2-5ea16301f9de" name="Changes" comment="Added regrationTestV1">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/UnicoStudioRegrationTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/UnicoStudioRegrationTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.unicoStudio.tests.AboutPageTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.unicoStudio.tests.HomePageTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/UnicoStudioRegrationTest.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/pages/AgeOfBrainos.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/AgeOfBrainosTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/unicoStudioConsole-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regrationTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/utilities/DriverPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/AboutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/AgeOfBrainos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/AgeOfBrainos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/CareersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/CareersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/GamesPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/GamesPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/AboutPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/AboutPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/CareersPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/CareersPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/GamesPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/GamesPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/utilities/BrowserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/UnicoStudioRegrationTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/UnicoStudioRegrationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.unicoStudio.tests.AboutPageTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.unicoStudio.tests.HomePageTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/UnicoStudioRegrationTest.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/pages/AboutPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/pages/AgeOfBrainos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/pages/CareersPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/pages/GamesPages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/pages/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/AboutPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/AgeOfBrainosTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/CareersPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/GamesPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/HomePageTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/utilities/BrowserUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/utilities/BrowserUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/utilities/ConfigurationReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/utilities/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/utilities/ExcelUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/unicoStudioConsole-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,32 +96,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.unicoStudio.utilities" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.CareersPageTest">
-    <configuration name="BrowserUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.unicoStudio.utilities.BrowserUtils" />
-      <module name="unicoStudioConsole" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.unicoStudio.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AboutPageTest.aboutPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AboutPageTest">
+    <configuration name="AboutPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="unicoStudioConsole" />
       <extension name="coverage">
         <pattern>
@@ -112,24 +122,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.unicoStudio.tests" />
       <option name="MAIN_CLASS_NAME" value="com.unicoStudio.tests.AboutPageTest" />
-      <option name="METHOD_NAME" value="aboutPageTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CareersPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="unicoStudioConsole" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.unicoStudio.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.unicoStudio.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.unicoStudio.tests.CareersPageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -137,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.homePageFacebookTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AboutPageTest.aboutPageInstagramTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="unicoStudioConsole" />
       <extension name="coverage">
         <pattern>
@@ -146,8 +138,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.unicoStudio.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.unicoStudio.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="homePageFacebookTest" />
+      <option name="MAIN_CLASS_NAME" value="com.unicoStudio.tests.AboutPageTest" />
+      <option name="METHOD_NAME" value="aboutPageInstagramTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.homePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AboutPageTest.aboutPageLinkedInTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="unicoStudioConsole" />
       <extension name="coverage">
         <pattern>
@@ -164,8 +156,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.unicoStudio.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.unicoStudio.tests.HomePageTests" />
-      <option name="METHOD_NAME" value="homePageTest" />
+      <option name="MAIN_CLASS_NAME" value="com.unicoStudio.tests.AboutPageTest" />
+      <option name="METHOD_NAME" value="aboutPageLinkedInTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AboutPageTest.aboutPageTwitterTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="unicoStudioConsole" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unicoStudio.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.unicoStudio.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.unicoStudio.tests.AboutPageTest" />
+      <option name="METHOD_NAME" value="aboutPageTwitterTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AboutPageTest.testAbout1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="unicoStudioConsole" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unicoStudio.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.unicoStudio.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.unicoStudio.tests.AboutPageTest" />
+      <option name="METHOD_NAME" value="testAbout1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -175,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CareersPageTest" />
-        <item itemvalue="TestNG.AboutPageTest.aboutPageTest" />
-        <item itemvalue="Application.BrowserUtils" />
-        <item itemvalue="TestNG.HomePageTests.homePageFacebookTest" />
-        <item itemvalue="TestNG.HomePageTests.homePageTest" />
+        <item itemvalue="TestNG.AboutPageTest" />
+        <item itemvalue="TestNG.AboutPageTest.aboutPageInstagramTest" />
+        <item itemvalue="TestNG.AboutPageTest.testAbout1" />
+        <item itemvalue="TestNG.AboutPageTest.aboutPageTwitterTest" />
+        <item itemvalue="TestNG.AboutPageTest.aboutPageLinkedInTest" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667486865109</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added regrationTestV1">
+      <created>1670352252294</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670352252295</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
