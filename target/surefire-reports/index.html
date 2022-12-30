@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,10 +102,34 @@
                     <div class="method-list-content failed suite-UnicoStudio_Automation">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-UnicoStudio_Automation" title="com.unicoStudio.tests.AboutPageTest" hash-for-method="aboutPageTest">aboutPageTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-UnicoStudio_Automation" title="com.unicoStudio.tests.AboutPageTest" hash-for-method="aboutPageFacebookTest">aboutPageFacebookTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-UnicoStudio_Automation -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-UnicoStudio_Automation" class="hide-methods skipped suite-UnicoStudio_Automation"> (hide)</a> <!-- hide-methods skipped suite-UnicoStudio_Automation -->
+                      <a href="#" panel-name="suite-UnicoStudio_Automation" class="show-methods skipped suite-UnicoStudio_Automation"> (show)</a> <!-- show-methods skipped suite-UnicoStudio_Automation -->
+                    </span>
+                    <div class="method-list-content skipped suite-UnicoStudio_Automation">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-UnicoStudio_Automation" title="com.unicoStudio.tests.AboutPageTest" hash-for-method="aboutPageInstagramTest">aboutPageInstagramTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-UnicoStudio_Automation" title="com.unicoStudio.tests.AboutPageTest" hash-for-method="aboutPageLinkedInTest">aboutPageLinkedInTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-UnicoStudio_Automation" title="com.unicoStudio.tests.AboutPageTest" hash-for-method="aboutPageTwitterTest">aboutPageTwitterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-UnicoStudio_Automation -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -139,18 +163,75 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="aboutPageTest">
-                  </a> <!-- aboutPageTest -->
-                  <span class="method-name">aboutPageTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Unico Studio - Home | Facebook] but found [Unico Studio - Home]
-	at com.unicoStudio.tests.AboutPageTest.aboutPageTest(AboutPageTest.java:59)
+                  <a name="aboutPageFacebookTest">
+                  </a> <!-- aboutPageFacebookTest -->
+                  <span class="method-name">aboutPageFacebookTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;nahsen-mbp&apos;, ip: &apos;fe80:0:0:0:1805:e1c9:84be:b9eb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.unicoStudio.tests.AboutPageTest.aboutPageFacebookTest(AboutPageTest.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-UnicoStudio_Automation-class-failed -->
+          <div class="suite-UnicoStudio_Automation-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.unicoStudio.tests.AboutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageInstagramTest">
+                  </a> <!-- aboutPageInstagramTest -->
+                  <span class="method-name">aboutPageInstagramTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.unicoStudio.tests.TestBase.tearDown(TestBase.java:69)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageLinkedInTest">
+                  </a> <!-- aboutPageLinkedInTest -->
+                  <span class="method-name">aboutPageLinkedInTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.unicoStudio.tests.TestBase.tearDown(TestBase.java:69)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageTwitterTest">
+                  </a> <!-- aboutPageTwitterTest -->
+                  <span class="method-name">aboutPageTwitterTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.unicoStudio.tests.TestBase.tearDown(TestBase.java:69)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-UnicoStudio_Automation-class-failed -->
+          </div> <!-- suite-UnicoStudio_Automation-class-skipped -->
           <div class="suite-UnicoStudio_Automation-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -219,20 +300,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'homePageTest')
 data.setCell(0, 2, 'com.unicoStudio.tests.HomePageTests')
-data.setCell(0, 3, 52702);
+data.setCell(0, 3, 98900);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'aboutPageTest')
+data.setCell(1, 1, 'aboutPageFacebookTest')
 data.setCell(1, 2, 'com.unicoStudio.tests.AboutPageTest')
-data.setCell(1, 3, 6150);
+data.setCell(1, 3, 1015);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'aboutPageTwitterTest')
+data.setCell(2, 2, 'com.unicoStudio.tests.AboutPageTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'aboutPageLinkedInTest')
+data.setCell(3, 2, 'com.unicoStudio.tests.AboutPageTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'aboutPageInstagramTest')
+data.setCell(4, 2, 'com.unicoStudio.tests.AboutPageTest')
+data.setCell(4, 3, 0);
 window.suiteTableData['UnicoStudio_Automation']= { tableData: data, tableDiv: 'times-div-UnicoStudio_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-UnicoStudio_Automation">
               </div> <!-- times-div-UnicoStudio_Automation -->
             </div> <!-- times-div -->
@@ -272,42 +365,90 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">108 ms</span>
+                <span class="method-start">299 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homePageTest</span>
-                <span class="method-start">5052 ms</span>
+                <span class="method-start">8652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=homePageTest status=SUCCESS method=HomePageTests.homePageTest()[pri:0, instance:com...)</span>
-                <span class="method-start">57775 ms</span>
+                <span class="method-start">107599 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownTest</span>
-                <span class="method-start">59778 ms</span>
+                <span class="method-start">110822 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.unicoStudio.tests.AboutPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">59787 ms</span>
+                <span class="method-start">110835 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">aboutPageTest</span>
-                <span class="method-start">60470 ms</span>
+                <span class="method-name">aboutPageFacebookTest</span>
+                <span class="method-start">121985 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">tearDown([TestResult name=aboutPageTest status=FAILURE method=AboutPageTest.aboutPageTest()[pri:0, instance:c...)</span>
-                <span class="method-start">66627 ms</span>
+                <span class="method-name">tearDown([TestResult name=aboutPageFacebookTest status=FAILURE method=AboutPageTest.aboutPageFacebookTest()[p...)</span>
+                <span class="method-start">123018 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownTest</span>
-                <span class="method-start">66632 ms</span>
+                <span class="method-start">123039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">123048 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutPageInstagramTest</span>
+                <span class="method-start">123056 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">123057 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest</span>
+                <span class="method-start">123058 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">123059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutPageLinkedInTest</span>
+                <span class="method-start">123059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">123059 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest</span>
+                <span class="method-start">123059 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">123059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutPageTwitterTest</span>
+                <span class="method-start">123059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">123059 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownTest</span>
+                <span class="method-start">123059 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -15,8 +15,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
@@ -44,7 +42,7 @@ public class TestBase {
         //attach the html report to report object
         report.attachReporter(htmlReporter);
         //title in report
-        htmlReporter.config().setReportName("Vytrack Smoke Test");
+        htmlReporter.config().setReportName("Unico Studio WebPage Test");
         //set environment information
         report.setSystemInfo("Environment","QA");
         report.setSystemInfo("Browser", ConfigurationReader.get("browser"));
@@ -81,14 +79,15 @@ public class TestBase {
 
         }
 
-        Thread.sleep(2000);
-      //  Driver.closeDriver();
+        BrowserUtils.waitFor(3);
+        Driver.closeDriver();
+
     }
-    @AfterMethod
+  /*  @AfterMethod
     public void tearDownTest(){
         //this is when the report is actually created
         report.flush();
 
-    }
+    }*/
 
 }

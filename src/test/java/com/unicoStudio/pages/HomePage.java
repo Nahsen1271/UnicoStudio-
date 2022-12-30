@@ -1,5 +1,6 @@
 package com.unicoStudio.pages;
 
+
 import com.unicoStudio.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,7 +19,7 @@ public class HomePage {
     public WebElement unicotext;
 
     @FindBy(xpath="//a[normalize-space()='About']")
-    public WebElement aboutBtn;//ul/li/a[@href='about.html']
+    public WebElement aboutBtn;
 
     @FindBy(xpath="//ul/li/a[@href='about.html']")
     public WebElement aboutBtn2;

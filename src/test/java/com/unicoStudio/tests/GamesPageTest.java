@@ -5,10 +5,7 @@ import com.unicoStudio.pages.GamesPages;
 import com.unicoStudio.pages.HomePage;
 import com.unicoStudio.utilities.BrowserUtils;
 import com.unicoStudio.utilities.ConfigurationReader;
-import com.unicoStudio.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -27,8 +24,9 @@ public class GamesPageTest  extends TestBase{
     Iterator t;
     @Test(priority = 1)
     public void gamesPageTest() {
-        jse= (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].click();",homePage.gamesBtn);
+     //   jse= (JavascriptExecutor) driver;
+    //    jse.executeScript("arguments[0].click();",homePage.gamesBtn);
+        homePage.gamesBtn.click();
         String actUnicoStudioText = gamesPages.unicoStudio.getText();
         System.out.println("actUnicoStudioText = " + actUnicoStudioText);
         Assert.assertEquals(actUnicoStudioText,ConfigurationReader.get("expUnicoStudioText"));
@@ -43,7 +41,8 @@ public class GamesPageTest  extends TestBase{
     @Test(priority = 2) /* Brain Test Google Play Check*/
     public void brainTestGP() {
         jse= (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].click();",homePage.gamesBtn);
+      //  jse.executeScript("arguments[0].click();",homePage.gamesBtn);
+        homePage.gamesBtn.click();
         String brainTestText = gamesPages.brainTest.getText(); // Verify that it is Brain Test Game
         System.out.println("brainTestText = " + brainTestText);
 
@@ -55,6 +54,7 @@ public class GamesPageTest  extends TestBase{
         // Google Play sayfasına geçişin kontrol edilmesi
 
         jse.executeScript("arguments[0].click();",gamesPages.brainTestGP);
+       // gamesPages.brainTestGP.click();
         windowHandles = driver.getWindowHandles();
         t = windowHandles.iterator();
         String mainPage  = (String) t.next();
@@ -64,8 +64,7 @@ public class GamesPageTest  extends TestBase{
         BrowserUtils.waitFor(1);
         String actGPGamesTitle=driver.getTitle();
         Assert.assertEquals(actGPGamesTitle, ConfigurationReader.get("expGPGamesTitle"));// Assert burada yapılacak.
-        driver.close();
-        driver.switchTo().window(mainPage);
+
 
 
 
@@ -73,8 +72,9 @@ public class GamesPageTest  extends TestBase{
     @Test(priority = 3) /* Brain Test AppStore Check*/
     public void brainTestAppStore() {
         jse= (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].click();",homePage.gamesBtn);
-        jse.executeScript("arguments[0].click();",gamesPages.brainTestAppSore);
+      //  jse.executeScript("arguments[0].click();",homePage.gamesBtn);
+        homePage.gamesBtn.click();
+       jse.executeScript("arguments[0].click();",gamesPages.brainTestAppSore);
         windowHandles = driver.getWindowHandles();
         t = windowHandles.iterator();
         String mainPage  = (String) t.next();
@@ -83,8 +83,7 @@ public class GamesPageTest  extends TestBase{
         BrowserUtils.waitForPageToLoad(1);
         BrowserUtils.waitFor(1);
         Assert.assertEquals(gamesPages.brainTestAppText.getText(), ConfigurationReader.get("expBTAppStore"));// Assert burada yapılacak.
-        driver.close();
-        driver.switchTo().window(mainPage);
+
 
 
 
@@ -92,7 +91,7 @@ public class GamesPageTest  extends TestBase{
     @Test(priority = 4)  /* Brain Test Poki Check*/
     public void brainTestPoki() {
         jse= (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].click();",homePage.gamesBtn);
+        homePage.gamesBtn.click();
         jse.executeScript("arguments[0].click();",gamesPages.brainTestPoki);
         windowHandles = driver.getWindowHandles();
         t = windowHandles.iterator();
@@ -104,8 +103,7 @@ public class GamesPageTest  extends TestBase{
         String poki= driver.getTitle();
         System.out.println("poki = " + poki);
         Assert.assertTrue(poki.contains("Poki"));// Assert burada yapılacak.
-        driver.close();
-        driver.switchTo().window(mainPage);
+
 
     }
     /*Bundan sonra aynı patern diğer oyunlarında kontrolü yapılabilir..*/

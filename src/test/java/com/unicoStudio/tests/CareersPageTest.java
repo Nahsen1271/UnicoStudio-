@@ -5,6 +5,7 @@ import com.unicoStudio.pages.CareersPage;
 import com.unicoStudio.pages.HomePage;
 import com.unicoStudio.utilities.BrowserUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -23,18 +24,23 @@ public class CareersPageTest extends TestBase{
         String careersPageTitle = driver.getTitle();
         System.out.println("careersPageTitle = " + careersPageTitle);
 
+        Assert.assertTrue(careersPageTitle.contains("Careers"));
+
         String whatWeOfferText = careersPage.whatWeOffer.getText();
         System.out.println("whatWeOfferText = " + whatWeOfferText);
 
+        Assert.assertTrue(whatWeOfferText.contains("What do we offer?"));
+
 
         List<String> expectedList= BrowserUtils.getElementsTextWithAttribute(careersPage.whatWeOfferSub);
-       // Assert.assertTrue(itemList.containsAll(expectedList));
-       System.out.println("expectedList = " + expectedList);
+        System.out.println("expectedList = " + expectedList);
+       // Assert.assertTrue(expectedList.containsAll("Amazing Team, Remote Working"));
 
       //  careersPage.checkOpenings.click();
 //        jse.executeScript("arguments[0].click();", careersPage.checkOpenings);
 //        String checkConnectTitle = driver.getTitle();
 //        System.out.println("checkConnectTitle = " + checkConnectTitle);
+        driver.close();
 
     }
 
