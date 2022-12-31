@@ -12,8 +12,8 @@ import java.util.Set;
 
 public class AboutPageTest extends TestBase {
 
-    AboutPage aboutPage = new AboutPage();
-    HomePage homePage = new HomePage();
+    AboutPage aboutPage;
+    HomePage homePage;
 
     JavascriptExecutor jse;
     Set<String> windowHandles;
@@ -24,6 +24,8 @@ public class AboutPageTest extends TestBase {
  //   @Test
     public void testAbout1() {
         BrowserUtils.waitFor(1);
+        aboutPage = new AboutPage();
+        homePage = new HomePage();
         BrowserUtils.waitForClickablility(homePage.aboutBtn,10);
         homePage.aboutBtn.click();
         String aboutPageTitle = driver.getTitle();
@@ -51,6 +53,8 @@ public class AboutPageTest extends TestBase {
 
         jse = (JavascriptExecutor) driver;
         BrowserUtils.waitFor(1);
+        aboutPage = new AboutPage();
+        homePage = new HomePage();
         homePage.aboutBtn.click();
         BrowserUtils.waitFor(1);
         jse.executeScript("arguments[0].scrollIntoView(true);", aboutPage.googlePlayAboutBtn); //Scroll down the page
@@ -76,6 +80,8 @@ public class AboutPageTest extends TestBase {
         public void aboutPageTwitterTest() {
             jse = (JavascriptExecutor) driver;
             BrowserUtils.waitFor(1);
+            aboutPage = new AboutPage();
+            homePage = new HomePage();
             BrowserUtils.waitForClickablility(homePage.aboutBtn,10);
             homePage.aboutBtn.click();
             BrowserUtils.waitFor(1);
@@ -102,6 +108,8 @@ public class AboutPageTest extends TestBase {
         public void aboutPageInstagramTest() {
             jse = (JavascriptExecutor) driver;
             BrowserUtils.waitFor(1);
+            aboutPage = new AboutPage();
+            homePage = new HomePage();
          //   BrowserUtils.waitForClickablility(homePage.aboutBtn,10);
             homePage.aboutBtn.click();
             BrowserUtils.waitFor(1);
@@ -128,6 +136,8 @@ public class AboutPageTest extends TestBase {
         public void aboutPageLinkedInTest() {
             jse = (JavascriptExecutor) driver;
             BrowserUtils.waitFor(1);
+            aboutPage = new AboutPage();
+            homePage = new HomePage();
             BrowserUtils.waitForClickablility(homePage.aboutBtn,10);
             homePage.aboutBtn.click();
             BrowserUtils.waitFor(1);

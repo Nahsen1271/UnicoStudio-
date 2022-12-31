@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="UnicoStudio Automation" duration-ms="169986" started-at="2022-12-30T19:42:50 EET" finished-at="2022-12-30T19:45:40 EET">
+  <suite name="UnicoStudio Automation" duration-ms="211329" started-at="2023-01-01T00:02:22 EET" finished-at="2023-01-01T00:05:53 EET">
     <groups>
     </groups>
-    <test name="UnicoStudioRegrationTest" duration-ms="169986" started-at="2022-12-30T19:42:50 EET" finished-at="2022-12-30T19:45:40 EET">
+    <test name="UnicoStudioRegrationTest" duration-ms="211329" started-at="2023-01-01T00:02:22 EET" finished-at="2023-01-01T00:05:53 EET">
       <class name="com.unicoStudio.tests.AboutPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="setUp" is-config="true" duration-ms="1409" started-at="2022-12-30T19:44:26 EET" finished-at="2022-12-30T19:44:27 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="setUp" is-config="true" duration-ms="9410" started-at="2023-01-01T00:03:36 EET" finished-at="2023-01-01T00:03:46 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="aboutPageFacebookTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="aboutPageFacebookTest" duration-ms="22288" started-at="2022-12-30T19:44:27 EET" finished-at="2022-12-30T19:44:50 EET">
+        <test-method status="PASS" signature="aboutPageFacebookTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="aboutPageFacebookTest" duration-ms="23385" started-at="2023-01-01T00:03:46 EET" finished-at="2023-01-01T00:04:09 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageFacebookTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="tearDown" is-config="true" duration-ms="3" started-at="2022-12-30T19:44:50 EET" finished-at="2022-12-30T19:44:50 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="tearDown" is-config="true" duration-ms="3123" started-at="2023-01-01T00:04:09 EET" finished-at="2023-01-01T00:04:12 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=aboutPageFacebookTest status=SUCCESS method=AboutPageTest.aboutPageFacebookTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79] output={null}]]]>
+                <![CDATA[[TestResult name=aboutPageFacebookTest status=SUCCESS method=AboutPageTest.aboutPageFacebookTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="setUp" is-config="true" duration-ms="5212" started-at="2022-12-30T19:44:50 EET" finished-at="2022-12-30T19:44:55 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="setUp" is-config="true" duration-ms="10580" started-at="2023-01-01T00:04:12 EET" finished-at="2023-01-01T00:04:23 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="aboutPageInstagramTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="aboutPageInstagramTest" duration-ms="14803" started-at="2022-12-30T19:44:55 EET" finished-at="2022-12-30T19:45:10 EET">
+        <test-method status="PASS" signature="aboutPageInstagramTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="aboutPageInstagramTest" duration-ms="18773" started-at="2023-01-01T00:04:23 EET" finished-at="2023-01-01T00:04:42 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageInstagramTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-12-30T19:45:10 EET" finished-at="2022-12-30T19:45:10 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="tearDown" is-config="true" duration-ms="3104" started-at="2023-01-01T00:04:42 EET" finished-at="2023-01-01T00:04:45 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=aboutPageInstagramTest status=SUCCESS method=AboutPageTest.aboutPageInstagramTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79] output={null}]]]>
+                <![CDATA[[TestResult name=aboutPageInstagramTest status=SUCCESS method=AboutPageTest.aboutPageInstagramTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="setUp" is-config="true" duration-ms="3308" started-at="2022-12-30T19:45:10 EET" finished-at="2022-12-30T19:45:13 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="setUp" is-config="true" duration-ms="9675" started-at="2023-01-01T00:04:45 EET" finished-at="2023-01-01T00:04:54 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="aboutPageLinkedInTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="aboutPageLinkedInTest" duration-ms="10081" started-at="2022-12-30T19:45:13 EET" finished-at="2022-12-30T19:45:23 EET">
+        <test-method status="PASS" signature="aboutPageLinkedInTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="aboutPageLinkedInTest" duration-ms="21112" started-at="2023-01-01T00:04:54 EET" finished-at="2023-01-01T00:05:15 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageLinkedInTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-12-30T19:45:23 EET" finished-at="2022-12-30T19:45:23 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="tearDown" is-config="true" duration-ms="3101" started-at="2023-01-01T00:05:15 EET" finished-at="2023-01-01T00:05:19 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=aboutPageLinkedInTest status=SUCCESS method=AboutPageTest.aboutPageLinkedInTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79] output={null}]]]>
+                <![CDATA[[TestResult name=aboutPageLinkedInTest status=SUCCESS method=AboutPageTest.aboutPageLinkedInTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="setUp" is-config="true" duration-ms="3435" started-at="2022-12-30T19:45:23 EET" finished-at="2022-12-30T19:45:26 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="setUp" is-config="true" duration-ms="9314" started-at="2023-01-01T00:05:19 EET" finished-at="2023-01-01T00:05:28 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="aboutPageTwitterTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="aboutPageTwitterTest" duration-ms="10196" started-at="2022-12-30T19:45:26 EET" finished-at="2022-12-30T19:45:37 EET">
+        <test-method status="PASS" signature="aboutPageTwitterTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="aboutPageTwitterTest" duration-ms="21727" started-at="2023-01-01T00:05:28 EET" finished-at="2023-01-01T00:05:50 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutPageTwitterTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-12-30T19:45:37 EET" finished-at="2022-12-30T19:45:37 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79]" name="tearDown" is-config="true" duration-ms="3794" started-at="2023-01-01T00:05:50 EET" finished-at="2023-01-01T00:05:53 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=aboutPageTwitterTest status=SUCCESS method=AboutPageTest.aboutPageTwitterTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@64c63c79] output={null}]]]>
+                <![CDATA[[TestResult name=aboutPageTwitterTest status=SUCCESS method=AboutPageTest.aboutPageTwitterTest()[pri:0, instance:com.unicoStudio.tests.AboutPageTest@57536d79] output={null}]]]>
               </value>
             </param>
           </params>
@@ -85,33 +85,29 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.unicoStudio.tests.AboutPageTest -->
       <class name="com.unicoStudio.tests.HomePageTests">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.unicoStudio.tests.HomePageTests@27eedb64]" name="setUpTest" is-config="true" duration-ms="271" started-at="2022-12-30T19:42:50 EET" finished-at="2022-12-30T19:42:50 EET">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.unicoStudio.tests.HomePageTests@6ddf90b0]" name="setUpTest" is-config="true" duration-ms="129" started-at="2023-01-01T00:02:22 EET" finished-at="2023-01-01T00:02:22 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.HomePageTests@27eedb64]" name="setUp" is-config="true" duration-ms="7417" started-at="2022-12-30T19:42:50 EET" finished-at="2022-12-30T19:42:58 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.unicoStudio.tests.HomePageTests@6ddf90b0]" name="setUp" is-config="true" duration-ms="12493" started-at="2023-01-01T00:02:22 EET" finished-at="2023-01-01T00:02:35 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageTest()[pri:0, instance:com.unicoStudio.tests.HomePageTests@27eedb64]" name="homePageTest" duration-ms="88175" started-at="2022-12-30T19:42:58 EET" finished-at="2022-12-30T19:44:26 EET">
+        <test-method status="PASS" signature="homePageTest()[pri:0, instance:com.unicoStudio.tests.HomePageTests@6ddf90b0]" name="homePageTest" duration-ms="58361" started-at="2023-01-01T00:02:35 EET" finished-at="2023-01-01T00:03:33 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.HomePageTests@27eedb64]" name="tearDown" is-config="true" duration-ms="5" started-at="2022-12-30T19:44:26 EET" finished-at="2022-12-30T19:44:26 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unicoStudio.tests.HomePageTests@6ddf90b0]" name="tearDown" is-config="true" duration-ms="3165" started-at="2023-01-01T00:03:33 EET" finished-at="2023-01-01T00:03:36 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homePageTest status=SUCCESS method=HomePageTests.homePageTest()[pri:0, instance:com.unicoStudio.tests.HomePageTests@27eedb64] output={null}]]]>
+                <![CDATA[[TestResult name=homePageTest status=SUCCESS method=HomePageTests.homePageTest()[pri:0, instance:com.unicoStudio.tests.HomePageTests@6ddf90b0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.unicoStudio.tests.HomePageTests@27eedb64]" name="tearDownClass" is-config="true" duration-ms="3248" started-at="2022-12-30T19:45:37 EET" finished-at="2022-12-30T19:45:40 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
       </class> <!-- com.unicoStudio.tests.HomePageTests -->
     </test> <!-- UnicoStudioRegrationTest -->
   </suite> <!-- UnicoStudio Automation -->

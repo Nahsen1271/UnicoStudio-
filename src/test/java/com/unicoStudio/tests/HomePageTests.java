@@ -107,7 +107,7 @@ public class HomePageTests extends TestBase{
         mainPage  = (String) t.next();
         newWindow= (String) t.next();
         driver.switchTo().window(newWindow);
-        BrowserUtils.waitForPageToLoad(1);
+      //  BrowserUtils.waitForPageToLoad(1);
         BrowserUtils.waitFor(2);
         String actLinkedIn=driver.getTitle();
        // Assert.assertEquals(actLinkedIn,ConfigurationReader.get("expLinkedIn"));

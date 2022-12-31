@@ -87,10 +87,10 @@ public class TestBase {
         report.flush();
 
     }*/
-  @AfterTest
+ /* @AfterTest
   public void tearDownClass(){
       BrowserUtils.waitFor(3);
       Driver.closeDriver();
-  }
+  }*/
 
 }
