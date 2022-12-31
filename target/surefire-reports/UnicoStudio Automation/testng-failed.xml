@@ -10,7 +10,7 @@
           <include name="aboutPageInstagramTest"/>
           <include name="tearDown"/>
           <include name="setUpTest"/>
-          <include name="tearDownTest"/>
+          <include name="tearDownClass"/>
           <include name="aboutPageFacebookTest"/>
           <include name="setUp"/>
         </methods>
