@@ -21,8 +21,8 @@ public class AboutPageTest extends TestBase {
     String mainPage ;
     String newWindow ;
 
- //   @Test
-    public void testAbout1() {
+   @Test
+    public void aboutGeneralTextTest() {
         BrowserUtils.waitFor(1);
         aboutPage = new AboutPage();
         homePage = new HomePage();

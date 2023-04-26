@@ -4,29 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e958b764-042b-44a6-89f2-5ea16301f9de" name="Changes" comment="Added regrationTestV5">
+    <list default="true" id="e958b764-042b-44a6-89f2-5ea16301f9de" name="Changes" comment="Added regrationTestV6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/AboutPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/AboutPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/HomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unicoStudio/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/unicoStudio/utilities/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/UnicoStudioRegrationTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/UnicoStudioRegrationTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/UnicoStudioRegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/UnicoStudioRegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/UnicoStudio Automation/testng-failed.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.unicoStudio.tests.AboutPageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.unicoStudio.tests.AboutPageTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.unicoStudio.tests.HomePageTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.unicoStudio.tests.HomePageTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/UnicoStudio Automation/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/AboutPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/AboutPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/HomePageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/HomePageTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/unicoStudio/tests/TestBase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,7 @@
       <recent name="com.unicoStudio.utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AboutPageTest">
+  <component name="RunManager" selected="TestNG.HomePageTests.homePageTest">
     <configuration name="AboutPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="unicoStudioConsole" />
       <extension name="coverage">
@@ -158,10 +154,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AboutPageTest" />
-        <item itemvalue="TestNG.AboutPageTest.aboutPageInstagramTest" />
         <item itemvalue="TestNG.HomePageTests.homePageTest" />
         <item itemvalue="TestNG.AboutPageTest.aboutPageFacebookTest" />
+        <item itemvalue="TestNG.AboutPageTest" />
+        <item itemvalue="TestNG.AboutPageTest.aboutPageInstagramTest" />
         <item itemvalue="TestNG.AboutPageTest.testAbout1" />
       </list>
     </recent_temporary>
@@ -224,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672518967335</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added regrationTestV6">
+      <created>1672520969835</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672520969835</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,7 +249,8 @@
     <MESSAGE value="Added regrationTestV3" />
     <MESSAGE value="Added regrationTestV4" />
     <MESSAGE value="Added regrationTestV5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added regrationTestV5" />
+    <MESSAGE value="Added regrationTestV6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added regrationTestV6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="211.936" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="13.062" tests="17" errors="0" skipped="14" failures="3">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="webdriver.chrome.driver" value="/Users/nahsen/.cache/selenium/chromedriver/mac64/108.0.5359.71/chromedriver"/>
+    <property name="webdriver.chrome.driver" value="/Users/nahsen/.cache/selenium/chromedriver/mac64/112.0.5615.49/chromedriver"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/nahsen/IdeaProjects/UnicoStudio-/target/test-classes:/Users/nahsen/IdeaProjects/UnicoStudio-/target/classes:/Users/nahsen/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/nahsen/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/nahsen/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/nahsen/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/nahsen/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nahsen/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/nahsen/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/nahsen/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/nahsen/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/nahsen/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/nahsen/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/nahsen/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/nahsen/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/nahsen/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/nahsen/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/nahsen/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/nahsen/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/nahsen/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/nahsen/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/nahsen/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/nahsen/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/nahsen/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/nahsen/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/nahsen/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/nahsen/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/nahsen/.m2/repository/com/aventstack/extentreports/4.0.5/extentreports-4.0.5.jar:/Users/nahsen/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/nahsen/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/nahsen/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/nahsen/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/nahsen/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/nahsen/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/nahsen/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/nahsen/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/nahsen/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/nahsen/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/nahsen/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/nahsen/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="TR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/nahsen/IdeaProjects/UnicoStudio-/target/surefire/surefirebooter4140420455006077089.jar /Users/nahsen/IdeaProjects/UnicoStudio-/target/surefire 2023-01-01T00-02-20_772-jvmRun1 surefire4090854878576988994tmp surefire_07510224512722513365tmp"/>
+    <property name="sun.java.command" value="/Users/nahsen/IdeaProjects/UnicoStudio-/target/surefire/surefirebooter26620377187493670.jar /Users/nahsen/IdeaProjects/UnicoStudio-/target/surefire 2023-04-26T10-02-26_619-jvmRun1 surefire5210579903215663997tmp surefire_01178886823558640025tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/nahsen/IdeaProjects/UnicoStudio-/target/test-classes:/Users/nahsen/IdeaProjects/UnicoStudio-/target/classes:/Users/nahsen/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/nahsen/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/nahsen/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/nahsen/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/nahsen/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/nahsen/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nahsen/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/nahsen/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/nahsen/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/nahsen/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/nahsen/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/nahsen/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/nahsen/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/nahsen/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/nahsen/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/nahsen/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/nahsen/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/nahsen/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/nahsen/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/nahsen/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/nahsen/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/nahsen/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/nahsen/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/nahsen/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/nahsen/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/nahsen/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/nahsen/.m2/repository/com/aventstack/extentreports/4.0.5/extentreports-4.0.5.jar:/Users/nahsen/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/nahsen/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/nahsen/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/nahsen/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/nahsen/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nahsen/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/nahsen/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/nahsen/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/nahsen/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/nahsen/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/nahsen/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/nahsen/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/nahsen/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/nahsen/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/nahsen/IdeaProjects/UnicoStudio-/target/surefire/surefirebooter4140420455006077089.jar"/>
+    <property name="surefire.real.class.path" value="/Users/nahsen/IdeaProjects/UnicoStudio-/target/surefire/surefirebooter26620377187493670.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -63,76 +63,88 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="homePageTest" classname="com.unicoStudio.tests.HomePageTests" time="58.317">
+  <testcase name="homePageTest" classname="com.unicoStudio.tests.HomePageTests" time="0.913">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=112.0.5615.137)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;nahsen-mbp&apos;, ip: &apos;fe80:0:0:0:8f9:633d:9ac3:e373%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7ea37f62e8e63359624557a54fe87fb3" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.137)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'nahsen-mbp', ip: 'fe80:0:0:0:8f9:633d:9ac3:e373%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ea37f62e8e63359624557a54fe87fb3
+	at com.unicoStudio.tests.HomePageTests.homePageTest(HomePageTests.java:26)
+]]></failure>
     <system-out><![CDATA[projectPath = /Users/nahsen/IdeaProjects/UnicoStudio-
 path = /Users/nahsen/IdeaProjects/UnicoStudio-/test-output/report.html
-actAboutText = About
-actGamesText = Games
-actCareersText = Careers
-actContactText = Contact
-homeTitle = Home - Unico
-homeWindow = CDwindow-BB443236F09CF0A8B9DD9D74819E5C8B
-actFacebook = Unico Studio - Home
-actTwitter = Unico Studio (@StudioUnico) / Twitter
-actInstagram = Unico Studio (@unicostudiogames) • Instagram photos and videos
-termAndConTextText = Terms and Conditions
-privacyPolicyTextText = Privacy Policy
-actGooglePlayTitle : Android Apps by Unico Studio on Google Play
-actAppStoreTitle= UNICO STUDIO - iPad & iPhone
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 2904
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 40766
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan 01, 2023 12:02:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 26, 2023 10:02:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="aboutPageFacebookTest" classname="com.unicoStudio.tests.AboutPageTest" time="23.342">
-    <system-out><![CDATA[actFacebook = Unico Studio - Home | Facebook
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 36311
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan 01, 2023 12:03:41 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+  <testcase name="tearDown[[TestResult name=homePageTest status=FAILURE method=HomePageTests.homePageTest()[pri:0, instance:com.unicoStudio.tests.HomePageTests@6ddf90b0] output={null}]](0)" classname="com.unicoStudio.tests.HomePageTests" time="0.914">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
   </testcase>
-  <testcase name="aboutPageInstagramTest" classname="com.unicoStudio.tests.AboutPageTest" time="18.768">
-    <system-out><![CDATA[actInstagram = https://www.instagram.com/unicostudiogames/
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 34529
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan 01, 2023 12:04:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+  <testcase name="setUp" classname="com.unicoStudio.tests.AboutPageTest" time="0.924">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=112.0.5615.137)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;nahsen-mbp&apos;, ip: &apos;fe80:0:0:0:8f9:633d:9ac3:e373%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7ea37f62e8e63359624557a54fe87fb3" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.137)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'nahsen-mbp', ip: 'fe80:0:0:0:8f9:633d:9ac3:e373%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ea37f62e8e63359624557a54fe87fb3
+]]></failure>
   </testcase>
-  <testcase name="aboutPageLinkedInTest" classname="com.unicoStudio.tests.AboutPageTest" time="21.101">
-    <system-out><![CDATA[actLinkedIn = Sign In | LinkedIn
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 29145
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan 01, 2023 12:04:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+  <testcase name="setUp" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
   </testcase>
-  <testcase name="aboutPageTwitterTest" classname="com.unicoStudio.tests.AboutPageTest" time="21.723">
-    <system-out><![CDATA[actTwitter = Profile / Twitter
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 30927
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan 01, 2023 12:05:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+  <testcase name="setUp" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="aboutGeneralTextTest" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=112.0.5615.137)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;nahsen-mbp&apos;, ip: &apos;fe80:0:0:0:8f9:633d:9ac3:e373%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7ea37f62e8e63359624557a54fe87fb3"/>
+  </testcase>
+  <testcase name="tearDown" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="aboutPageFacebookTest" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=112.0.5615.137)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;nahsen-mbp&apos;, ip: &apos;fe80:0:0:0:8f9:633d:9ac3:e373%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7ea37f62e8e63359624557a54fe87fb3"/>
+  </testcase>
+  <testcase name="aboutPageInstagramTest" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=112.0.5615.137)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;nahsen-mbp&apos;, ip: &apos;fe80:0:0:0:8f9:633d:9ac3:e373%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7ea37f62e8e63359624557a54fe87fb3"/>
+  </testcase>
+  <testcase name="aboutPageLinkedInTest" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=112.0.5615.137)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;nahsen-mbp&apos;, ip: &apos;fe80:0:0:0:8f9:633d:9ac3:e373%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7ea37f62e8e63359624557a54fe87fb3"/>
+  </testcase>
+  <testcase name="aboutPageTwitterTest" classname="com.unicoStudio.tests.AboutPageTest" time="0">
+    <skipped message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=112.0.5615.137)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;nahsen-mbp&apos;, ip: &apos;fe80:0:0:0:8f9:633d:9ac3:e373%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_202&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bv/psbf9139005...}, goog:chromeOptions: {debuggerAddress: localhost:50747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7ea37f62e8e63359624557a54fe87fb3"/>
   </testcase>
 </testsuite>
