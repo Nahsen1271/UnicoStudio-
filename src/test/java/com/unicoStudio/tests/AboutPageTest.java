@@ -1,6 +1,7 @@
 package com.unicoStudio.tests;
 
 import com.unicoStudio.pages.AboutPage;
+import com.unicoStudio.pages.AllPages;
 import com.unicoStudio.pages.HomePage;
 import com.unicoStudio.utilities.BrowserUtils;
 import com.unicoStudio.utilities.ConfigurationReader;
@@ -12,9 +13,9 @@ import java.util.Set;
 
 public class AboutPageTest extends TestBase {
 
-    AboutPage aboutPage;
-    HomePage homePage;
 
+
+    AllPages allPages;
     JavascriptExecutor jse;
     Set<String> windowHandles;
     Iterator t;
@@ -24,24 +25,21 @@ public class AboutPageTest extends TestBase {
    @Test
     public void aboutGeneralTextTest() {
         BrowserUtils.waitFor(1);
-        aboutPage = new AboutPage();
-        homePage = new HomePage();
-        BrowserUtils.waitForClickablility(homePage.aboutBtn,10);
-        homePage.aboutBtn.click();
+        allPages = new AllPages();
+        BrowserUtils.waitForClickablility(allPages.homePage().aboutBtn,10);
+        allPages.homePage().aboutBtn.click();
         String aboutPageTitle = driver.getTitle();
         System.out.println("aboutPageTitle = " + aboutPageTitle);
         Assert.assertTrue(aboutPageTitle.contains("About"));
 
-        String whoWeAreText = aboutPage.whoWeAre.getText();
+        String whoWeAreText = allPages.aboutPage().whoWeAre.getText();
         System.out.println("whoWeAreText = " + whoWeAreText);
 
-        String teamMatesText = aboutPage.teamMates.getText();
-        System.out.println("teamMatesText = " + teamMatesText);
 
-        String theTeamText = aboutPage.theTeam.getText();
+        String theTeamText = allPages.aboutPage().theTeam.getText();
         System.out.println("theTeamText = " + theTeamText);
 
-        String theTeamInfText = aboutPage.theTeamInf.getText();
+        String theTeamInfText = allPages.aboutPage().theTeamInf.getText();
         System.out.println("theTeamInfText = " + theTeamInfText);
 
 
@@ -53,14 +51,13 @@ public class AboutPageTest extends TestBase {
 
         jse = (JavascriptExecutor) driver;
         BrowserUtils.waitFor(1);
-        aboutPage = new AboutPage();
-        homePage = new HomePage();
-        homePage.aboutBtn.click();
+        allPages= new AllPages();
+        allPages.homePage().aboutBtn.click();
         BrowserUtils.waitFor(1);
-        jse.executeScript("arguments[0].scrollIntoView(true);", aboutPage.googlePlayAboutBtn); //Scroll down the page
+        jse.executeScript("arguments[0].scrollIntoView(true);", allPages.aboutPage().googlePlayAboutBtn); //Scroll down the page
         BrowserUtils.waitFor(1);
         //aboutPage.aboutPageFB.click();
-        jse.executeScript("arguments[0].click();",aboutPage.aboutPageFB);
+        jse.executeScript("arguments[0].click();",allPages.aboutPage().aboutPageFB);
         windowHandles = driver.getWindowHandles();
         t = windowHandles.iterator();
         mainPage = (String) t.next();
@@ -80,14 +77,13 @@ public class AboutPageTest extends TestBase {
         public void aboutPageTwitterTest() {
             jse = (JavascriptExecutor) driver;
             BrowserUtils.waitFor(1);
-            aboutPage = new AboutPage();
-            homePage = new HomePage();
-            BrowserUtils.waitForClickablility(homePage.aboutBtn,10);
-            homePage.aboutBtn.click();
+            allPages= new AllPages();
+            BrowserUtils.waitForClickablility(allPages.homePage().aboutBtn,10);
+            allPages.homePage().aboutBtn.click();
             BrowserUtils.waitFor(1);
-            jse.executeScript("arguments[0].scrollIntoView(true);", aboutPage.googlePlayAboutBtn);
-            BrowserUtils.waitFor(1);
-            aboutPage.aboutPageTW.click();
+            jse.executeScript("arguments[0].scrollIntoView(true);",allPages.aboutPage().aboutPageTW);
+            BrowserUtils.waitForClickablility(allPages.aboutPage().aboutPageTW,10);
+            jse.executeScript("arguments[0].click();",allPages.aboutPage().aboutPageTW);
             windowHandles = driver.getWindowHandles();
             t = windowHandles.iterator();
             mainPage = (String) t.next();
@@ -108,15 +104,13 @@ public class AboutPageTest extends TestBase {
         public void aboutPageInstagramTest() {
             jse = (JavascriptExecutor) driver;
             BrowserUtils.waitFor(1);
-            aboutPage = new AboutPage();
-            homePage = new HomePage();
-         //   BrowserUtils.waitForClickablility(homePage.aboutBtn,10);
-            homePage.aboutBtn.click();
+            allPages= new AllPages();
+            BrowserUtils.waitForClickablility(allPages.homePage().aboutBtn,10);
+            allPages.homePage().aboutBtn.click();
             BrowserUtils.waitFor(1);
-            jse.executeScript("arguments[0].scrollIntoView(true);", aboutPage.googlePlayAboutBtn);
+            jse.executeScript("arguments[0].scrollIntoView(true);", allPages.aboutPage().googlePlayAboutBtn);
             BrowserUtils.waitFor(1);
-       //     aboutPage.aboutPageINS.click();
-            jse.executeScript("arguments[0].click();",aboutPage.aboutPageINS);
+            jse.executeScript("arguments[0].click();",allPages.aboutPage().aboutPageINS);
             windowHandles = driver.getWindowHandles();
             t = windowHandles.iterator();
             mainPage = (String) t.next();
@@ -136,15 +130,14 @@ public class AboutPageTest extends TestBase {
         public void aboutPageLinkedInTest() {
             jse = (JavascriptExecutor) driver;
             BrowserUtils.waitFor(1);
-            aboutPage = new AboutPage();
-            homePage = new HomePage();
-            BrowserUtils.waitForClickablility(homePage.aboutBtn,10);
-            homePage.aboutBtn.click();
+            allPages= new AllPages();
+            BrowserUtils.waitForClickablility(allPages.homePage().aboutBtn,10);
+            allPages.homePage().aboutBtn.click();
             BrowserUtils.waitFor(1);
-            jse.executeScript("arguments[0].scrollIntoView(true);", aboutPage.googlePlayAboutBtn);
+            jse.executeScript("arguments[0].scrollIntoView(true);", allPages.aboutPage().googlePlayAboutBtn);
             BrowserUtils.waitFor(2);
             //aboutPage.aboutLINKEDIN.click();
-            jse.executeScript("arguments[0].click();",aboutPage.aboutLINKEDIN);
+            jse.executeScript("arguments[0].click();",allPages.aboutPage().aboutLINKEDIN);
             windowHandles = driver.getWindowHandles();
             t = windowHandles.iterator();
             mainPage = (String) t.next();

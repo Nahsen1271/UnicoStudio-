@@ -11,7 +11,7 @@ public class AboutPage {
 
         PageFactory.initElements(Driver.get(), this);
     }
-    @FindBy(xpath= "//h2[normalize-space()='Who are we?']")
+    @FindBy(xpath= "//*[@id='features']/div/div[1]/h2")
     public WebElement whoWeAre;
 
     @FindBy(xpath="//span[normalize-space()='500']")
@@ -20,7 +20,7 @@ public class AboutPage {
     @FindBy(xpath = "/html[1]/body[1]/main[1]/section[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/h2[1]")
     public WebElement teamMates;
 
-    @FindBy(xpath = "//div[@class='container aos-init aos-animate']/div/h2")
+    @FindBy(xpath = "//*[@id='gallery']/div[1]/div/h2")
     public WebElement theTeam;
 
     @FindBy(xpath="//p[contains(text(),'We have a talented and diverse team of managers, d')]")
