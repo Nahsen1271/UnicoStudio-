@@ -12,5 +12,6 @@ com/unicoStudio/pages/CareersPage.class
 com/unicoStudio/tests/AboutPageTest.class
 com/unicoStudio/tests/HomePageTests.class
 com/unicoStudio/tests/CareersPageTest.class
+com/unicoStudio/pages/AllPages.class
 com/unicoStudio/pages/AboutPage.class
 com/unicoStudio/tests/TestBase.class

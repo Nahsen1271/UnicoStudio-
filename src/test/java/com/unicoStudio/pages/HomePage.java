@@ -62,7 +62,10 @@ public class HomePage {
     public WebElement termAndCon;
 
     @FindBy(xpath="//h1[@id='terms-and-conditions']")
-    public WebElement termAndConText;
+    public WebElement termAndConText; //  mc-closeModal
+
+    @FindBy(className = "mc-closeModal")
+    public WebElement closePopUp;
 
     @FindBy(xpath="//a[normalize-space()='Privacy Policy']")
     public WebElement privacyPolicy;

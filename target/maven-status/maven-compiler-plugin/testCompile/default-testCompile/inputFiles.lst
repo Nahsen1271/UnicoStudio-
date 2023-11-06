@@ -4,6 +4,7 @@
 /Users/nahsen/IdeaProjects/UnicoStudio-/src/test/java/com/unicoStudio/pages/AboutPage.java
 /Users/nahsen/IdeaProjects/UnicoStudio-/src/test/java/com/unicoStudio/utilities/ExcelUtil.java
 /Users/nahsen/IdeaProjects/UnicoStudio-/src/test/java/com/unicoStudio/pages/GamesPages.java
+/Users/nahsen/IdeaProjects/UnicoStudio-/src/test/java/com/unicoStudio/pages/AllPages.java
 /Users/nahsen/IdeaProjects/UnicoStudio-/src/test/java/com/unicoStudio/utilities/ConfigurationReader.java
 /Users/nahsen/IdeaProjects/UnicoStudio-/src/test/java/com/unicoStudio/utilities/BrowserUtils.java
 /Users/nahsen/IdeaProjects/UnicoStudio-/src/test/java/com/unicoStudio/tests/AboutPageTest.java

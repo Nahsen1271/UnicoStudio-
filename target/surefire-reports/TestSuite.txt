@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 173.62 s - in TestSuite
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 281.38 s <<< FAILURE! - in TestSuite
+com.unicoStudio.tests.HomePageTests.homePageTest  Time elapsed: 33.284 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Terms & Conditions']"}
+  (Session info: chrome=119.0.6045.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'nahsen-mbp', ip: 'fe80:0:0:0:1031:9dc9:527:26d8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/bv/psbf9139005...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab949cc1c43825be02b5cc8621c47dd9
+*** Element info: {Using=xpath, value=//a[normalize-space()='Terms & Conditions']}
+	at com.unicoStudio.tests.HomePageTests.homePageTest(HomePageTests.java:120)
+
+com.unicoStudio.tests.HomePageTests.tearDown[[TestResult name=homePageTest status=FAILURE method=HomePageTests.homePageTest()[pri:0, instance:com.unicoStudio.tests.HomePageTests@3dd4520b] output={null}]](0)  Time elapsed: 33.284 s  <<< FAILURE!
+java.lang.NullPointerException
+
